@@ -40,7 +40,7 @@ def classify_image(file_path):
     img = np.asarray(image)
     img = np.expand_dims(img / 255.0, axis=0)
     predictions = model.predict(img)
-    return 'REAL' if predictions > 0.5 else 'SYNTHETIC'
+    return 'REAL' if predictions > 0.5 else 'AI-GENERATED IMAGE'
 
 st.write("Upload an image to check whether it is an AI-Generated Image or a Real Image.")
 
