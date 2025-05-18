@@ -14,11 +14,11 @@ from PIL import Image
 import requests
 
 st.set_page_config(
-    page_title="SynthCheck",
+    page_title="ProofPixel",
     page_icon="🤖"
 )
 
-st.title('SynthCheck: A Synthetic Image Identifier')
+st.title('ProofPixel:Real and AI-Generated Image Detection Using Modified Xception Net Architecture')
 
 # ✅ Corrected GitHub raw model URL (no quotes or duplication in assignment)
 github_model_url = "https://raw.githubusercontent.com/imtanusreesaha/CUSTOMXCEPTIONET224/d800c4b3bbfc26e5c523e6643392229836f7cefb/customxception224.h5"
