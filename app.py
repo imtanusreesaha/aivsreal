@@ -33,54 +33,6 @@ def load_model(github_model_url):
     return model
 
 model = load_model(github_model_url)
-# Custom CSS for background and fonts
-st.markdown(
-    """
-    <style>
-    /* Set background color for the whole app */
-    .stApp {
-        background-color: #f0f2f6;
-        /* You can use any color code here */
-    }
-
-    /* Set font family and color globally */
-    html, body, [class*="css"]  {
-        font-family: 'Montserrat', sans-serif;
-        color: #333333;
-    }
-
-    /* Customize the title font size and weight */
-    .css-10trblm e16nr0p33 {  /* Streamlit's h1 class changes, might need update */
-        font-size: 3rem;
-        font-weight: 700;
-        color: #1f2937;
-    }
-
-    /* Customize headers (h2, h3, etc.) */
-    h2, h3, h4 {
-        font-family: 'Roboto', sans-serif;
-        color: #374151;
-    }
-
-    /* Customize buttons */
-    .stButton > button {
-        background-color: #2563eb;
-        color: white;
-        font-weight: 600;
-        border-radius: 8px;
-        padding: 10px 24px;
-    }
-    .stButton > button:hover {
-        background-color: #1e40af;
-        color: white;
-    }
-    </style>
-
-    <!-- Import Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-    """,
-    unsafe_allow_html=True
-)
 
 def classify_image(file_path):
     image = Image.open(file_path)
